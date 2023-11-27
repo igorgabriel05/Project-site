@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body, h1{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    background: #000;
+    padding: 0.5em;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1-nav{
+    color: #FFF;
+    font-size: 3em;
+    margin-top: 0.2em;
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.p-nav{
+    color: #FFF;
+    margin: 1.4em 19em 0.8em;
+    font-size: 1.2em;
+    word-spacing: 5px;
+    line-height: 1.6;
+}
+
+/* Esconda os controles padrão do vídeo */
+video::-webkit-media-controls {
+    display:none !important;
+}
+
+
+
+video{
+    margin-top: 1.5em;
+    width: 938px;
+    height: 530px;
+}
+
+.video-anuncio{
+    display: flex;
+    justify-content: center;
+}
+
+.barra{
+    display: flex;
+    justify-content: center;
+}
+
+progress{   
+    width: 938px;
+    height: 20px;
+}
+
+.info-workshop{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    line-height: 1;
+    text-align: center;
+}
+
+.p-text1{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.p-text2{
+    font-size: 1.2em;
+}
+
+.botao-acesso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em 1em 5em;
+}
+
+.btn-inscrever{
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1.7em;
+    padding: 20px;
+    background-color: #25da30;
+    color: #FFF;
+}
+
+.pagamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    width: 520px;
+}
+
+.img-pagamento{
+    width: 100%;
+}
+
+.img-garantia{
+    width: 100px;
+}
+
+.comentarios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+}
+
+.h1-coment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6em;
+}
+
+.cards{
+    width: 1080px;
+    height: 420px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2em 1em;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-coment{
+    display: flex;
+    flex-direction: column;
+    height: 365px;
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #faeadfff;
+}
+
+.card-coment img{
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+}
+
+.p-coment{
+    height: 135px;
+    color: #0c9c92ff;
+    text-align: center;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.p-star{
+    font-size: 1.5em;
+    color: #faca15;
+    margin: 0;
+}
+
+.p-nome{
+    color: #0c9c92ff;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #7a7a7a;
+    margin-bottom: 10px;
+}
+
+.a-contact{
+    text-decoration: none;
+    color: #7a7a7a;
+}
+
+@media(max-width: 1321px) {
+    .p-nav{
+        margin: 1em 15em;
+    }
+}
+
+@media(max-width: 1167px) {
+    .p-nav{
+        margin: 1em 10em;
+    }
+}
+
+@media(max-width: 975px) {
+    .h1-nav{
+        font-size: 2.4em;
+    }
+    .p-nav{
+        margin: 1em 6em;
+    }
+    video{
+        margin-top: 1em;
+        width: 800px;
+        height: 455px;
+    }
+    progress{
+        width: 800px;
+    }
+    .h1-coment{
+        font-size: 1.8em;
+    }
+    .cards{
+        width: 770px;
+    }
+    .card-coment{
+        margin: 10px;
+    }
+}
+
+@media(max-width: 865px) {
+    .card-coment{
+        margin: 10px;
+    }
+
+}
+
+@media(max-width: 830px) {
+    .h1-nav{
+        font-size: 2.2em;
+    }
+    .p-nav{
+        font-size: 1.1em;
+        margin: 1em 3em;
+    }
+    video{
+        width: 600px;
+        height: 345px;
+    }
+    progress{
+        width: 600px;
+    }
+    .h1-coment{
+        font-size: 2em;
+    }
+    .card-coment{
+        margin: 5px;
+    }
+}
+
+@media(max-width: 725px) {
+    .h1-nav{
+        font-size: 1.7em;
+    }
+    .p-nav{
+        font-size: .7em;
+        margin: 1em 6em;
+    }
+    .comentarios{
+        height: 850px;
+        align-items: flex-start;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr;
+        height: 800px;
+        width: 600px;
+        margin: 0;
+    }
+    .card-coment{
+        margin: 1em;
+    }
+    .h1-coment{
+        font-size: 1.7em;
+    }
+}
+
+@media(max-width: 620px) {
+    .h1-nav{
+        font-size: 1.4em;
+    }
+    .p-nav{
+        font-size: .7em;
+        margin: 1em 4em;
+    }
+    video{
+        width: 430px;
+        height: 240px;
+    }
+    progress{
+        width: 430px;
+    }
+    .h1-coment{
+        font-size: 1.5em;
+    }
+    .comentarios{
+        height: 850px;
+        align-items: flex-start;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr;
+        height: 800px;
+        margin: 0;
+    }
+    .card-coment{
+        margin: 1em;
+    }
+    .btn-inscrever{
+        font-size: 1.3em;
+        padding: 10px;
+    }
+    .pagamento{
+        width: 400px;
+    }
+    .img-pagamento{
+        width: 100%;
+    }
+    .img-garantia{
+        width: 80px;
+    }
+}
+
+@media(max-width: 525px){
+    .h1-nav{
+        font-size: 1.1em;
+    }
+    .p-nav{
+        font-size: 0.6em;
+    }
+    .p-text1{
+        font-size: 1.3em;
+    }
+    .h1-coment{
+        font-size: 1.2em;
+    }
+    .cards{
+        margin: 0em;
+    }
+    .card-coment{
+        margin: 1em 0.5em;
+    }
+}
+
+
+@media(max-width: 450px){
+    .h1-nav{
+        font-size: 1.2em;
+    }
+    video{
+        width: 400px;
+        height: 226px;
+    }
+    progress{
+        width: 400px;
+    }
+    .info-workshop{
+        line-height: 1;
+        margin-bottom: 1em;
+    }
+    .h1-coment{
+        font-size: 1.1em;
+    }
+    .botao-acesso{
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+    .comentarios{
+        height: 100%;
+        width: 425px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+        width: 425px;
+        margin: 0;
+    }
+    .card-coment{
+        width: 300px;
+        margin-left: 4.3em;
+    }
+    footer{
+        font-size: 0.8em;
+    }
+}
